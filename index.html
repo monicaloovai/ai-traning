@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Praktisk AI-träning på 4 dagar – MonicaLoov.ai</title>
+<meta name="description" content="Syns, sälj och skapa innehåll med AI – utan att du behöver stå framför kameran. 4 kvällar live med Monica Lööv.">
+<meta property="og:title" content="Praktisk AI-träning på 4 dagar – MonicaLoov.ai">
+<meta property="og:description" content="Syns, sälj och skapa innehåll med AI – utan att du behöver stå framför kameran.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#1D181B">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%23A23A58'/%3E%3Ctext x='50' y='68' font-size='54' text-anchor='middle' fill='white' font-family='Georgia,serif' font-weight='700'%3EM%3C/text%3E%3C/svg%3E">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=DM+Sans:wght@400;500;700&display=swap');
+html{scroll-behavior:smooth}
+body{margin:0;background:#F6EFEA}
+.mlai{--ink:#1D181B;--ground:#F6EFEA;--rose:#A23A58;--rose-dark:#7E2A43;--blush:#F3D3DA;--muted:#5C5257;--soft:#E9DFE2;
+  font-family:'DM Sans',system-ui,-apple-system,'Segoe UI',sans-serif;color:var(--ink);background:var(--ground);
+  max-width:620px;margin:0 auto;line-height:1.5;font-size:16px;-webkit-font-smoothing:antialiased}
+.mlai *{box-sizing:border-box}
+.mlai h1,.mlai h2,.mlai h3{font-family:'Fraunces',Georgia,serif;font-weight:700;margin:0;line-height:1.1;color:inherit;letter-spacing:0;text-transform:none}
+.mlai p{margin:0}
+.mlai section{padding:44px 24px;display:flex;flex-direction:column;gap:22px}
+.mlai .dark{background:var(--ink);color:var(--ground)}
+.mlai .white{background:#fff}
+.mlai .brand{font-size:14px;font-weight:700;color:var(--blush);letter-spacing:.04em}
+.mlai .pill{align-self:flex-start;border:1px solid var(--blush);color:var(--blush);border-radius:999px;padding:8px 16px;font-size:14px;font-weight:500}
+.mlai h1{font-size:44px;line-height:1.05}
+.mlai h2{font-size:34px}
+.mlai h3{font-size:27px;line-height:1.15}
+.mlai .lead{font-size:18px;color:var(--soft)}
+.mlai .muted{color:var(--muted)}
+.mlai .list{display:flex;flex-direction:column;gap:14px;list-style:none;margin:0;padding:0}
+.mlai .list li{display:flex;gap:12px;align-items:flex-start}
+.mlai .list svg{flex-shrink:0;margin-top:2px}
+.mlai .dark .list li{color:var(--soft)}
+.mlai .btn{display:flex;align-items:center;justify-content:center;min-height:60px;padding:0 20px;border-radius:16px;background:var(--rose);color:#fff !important;font-size:18px;font-weight:700;text-decoration:none !important;text-align:center}
+.mlai .btn:hover{background:var(--rose-dark)}
+.mlai .btn.alt{background:var(--ink)}
+.mlai .btn:focus-visible{outline:3px solid var(--blush);outline-offset:3px}
+.mlai .img{width:100%;border-radius:20px;display:block;object-fit:cover}
+.mlai .ph{border-radius:20px;background:#3A3035;border:1px dashed #8C7B83;display:flex;align-items:center;justify-content:center;color:#C9BCC1;font-size:14px;text-align:center;padding:20px}
+.mlai .card{background:#fff;border-radius:22px;padding:26px 22px;display:flex;flex-direction:column;gap:14px}
+.mlai .day{background:var(--ink);color:var(--ground);border-radius:24px;padding:28px 24px;display:flex;flex-direction:column;gap:16px}
+.mlai .day.vip{border:2px solid var(--rose)}
+.mlai .daynum{font-size:15px;font-weight:700;color:var(--blush)}
+.mlai .tag{font-size:13px;font-weight:700;background:var(--rose);color:#fff;border-radius:999px;padding:4px 12px}
+.mlai .who{background:var(--ground);border-radius:18px;padding:22px;display:flex;flex-direction:column;gap:6px}
+.mlai .who b,.mlai .step b{font-size:18px}
+.mlai .step{display:flex;gap:16px}
+.mlai .num{flex-shrink:0;width:44px;height:44px;border-radius:50%;background:var(--ink);color:var(--blush);display:flex;align-items:center;justify-content:center;font-family:'Fraunces',Georgia,serif;font-size:20px;font-weight:700}
+.mlai .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.mlai .tool{background:#fff;color:var(--ink);border-radius:18px;padding:18px;display:flex;flex-direction:column;gap:4px}
+.mlai .price{font-family:'Fraunces',Georgia,serif;font-size:40px;font-weight:700}
+.mlai .ticket{border:1px solid #E0D2CC;border-radius:22px;padding:26px 22px;display:flex;flex-direction:column;gap:14px}
+.mlai .ticket.vip{background:var(--ink);color:var(--ground);border:2px solid var(--rose)}
+.mlai .fyll{background:#FFE58A;color:#1D181B;padding:0 4px;border-radius:4px}
+.mlai footer{font-size:14px;color:#B9AAB0;padding-top:12px}
+.mlai footer a{color:#B9AAB0}
+.mlai section.dark:first-child{padding-top:calc(44px + env(safe-area-inset-top,0px))}
+</style>
+</head>
+<body>
+<div class="mlai">
+
+<!-- HERO -->
+<section class="dark">
+  <div class="brand">MonicaLoov.ai</div>
+  <div class="pill"><span class="fyll">[DATUM]</span> – <span class="fyll">[DATUM]</span>, kl <span class="fyll">[TID]</span>, live online</div>
+  <h1>Praktisk AI-träning på 4 dagar</h1>
+  <p class="lead">Syns, sälj och skapa innehåll med AI – utan att du behöver stå framför kameran.</p>
+  <ul class="list">
+    <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F3D3DA" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>4 intensiva kvällar live med Monica Lööv</span></li>
+    <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F3D3DA" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Lär dig använda AI för text, bild, video och automatisering – så du sparar tid och pengar</span></li>
+  </ul>
+  <div class="ph" style="height:300px">[Porträttbild av Monica – eller din AI-avatar]</div>
+  <a class="btn" href="#biljetter">Anmäl dig nu</a>
+</section>
+
+<!-- BONUS -->
+<section style="padding-bottom:0">
+  <div class="card">
+    <h2 style="font-family:'DM Sans',system-ui,sans-serif;font-size:21px;line-height:1.3">Anmäl dig nu och få direkt:</h2>
+    <p class="muted"><span class="fyll">[DIN BONUS – t.ex. färdiga promptmallar för AI-video och Reels som du kan använda redan första dagen]</span></p>
+  </div>
+</section>
+
+<!-- VAD ÄR DET -->
+<section>
+  <h2>Vad är den här AI-träningen?</h2>
+  <p style="font-size:18px;font-weight:700">Ett praktiskt program på 4 dagar där jag visar dig:</p>
+  <ul class="list">
+    <li><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#A23A58" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Hur du skapar videor med en AI-avatar som ser ut och låter som du – utan att filma dig själv</span></li>
+    <li><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#A23A58" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Hur du skriver inlägg, mejl och säljtexter med AI som låter som dig – inte som en robot</span></li>
+    <li><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#A23A58" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Hur du gör AI till din ”medarbetare” i företaget och i vardagen</span></li>
+    <li><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#A23A58" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Hur du använder AI i riktiga projekt – bilder, redigering, video och automatiseringar</span></li>
+  </ul>
+  <p class="muted" style="font-size:17px">Noll onödig teori. Allt är praktiskt: riktiga exempel, övningar och beprövade mallar.</p>
+</section>
+
+<!-- STEG FÖR STEG -->
+<section style="padding-top:8px">
+  <h2>Det här lär du dig – steg för steg</h2>
+
+  <div class="day">
+    <div class="daynum">Dag 1</div>
+    <h3>Vad AI kan göra för dig – redan nu</h3>
+    <ul class="list">
+      <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F3D3DA" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Vilka återkommande uppgifter du kan automatisera på några minuter</span></li>
+      <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F3D3DA" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Hur du ser till att AI arbetar för dig – inte emot dig</span></li>
+      <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F3D3DA" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Hur du frigör tid för dig själv och ditt team</span></li>
+    </ul>
+  </div>
+
+  <div class="day">
+    <div class="daynum">Dag 2</div>
+    <h3>Skapa innehåll med AI</h3>
+    <ul class="list">
+      <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F3D3DA" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Text, bild och video – från en enda prompt</span></li>
+      <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F3D3DA" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Hur du bygger upp ett inlägg, en Reel eller ett tydligt erbjudande på 15 minuter</span></li>
+      <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F3D3DA" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Ett publiceringssystem som gör att du syns regelbundet – utan stress</span></li>
+    </ul>
+  </div>
+
+  <div class="day">
+    <div class="daynum">Dag 3</div>
+    <h3>AI-avatar &amp; video – live</h3>
+    <ul class="list">
+      <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F3D3DA" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Vi omsätter dag 1 och 2 i praktiken</span></li>
+      <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F3D3DA" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>AI-fotografering, Reels med digital avatar och animationer utifrån ditt manus – steg för steg, live</span></li>
+      <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F3D3DA" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Du går därifrån med färdigt material du kan publicera direkt</span></li>
+    </ul>
+  </div>
+
+  <div class="day vip">
+    <div style="display:flex;align-items:center;gap:10px"><span class="daynum">Dag 4</span><span class="tag">Endast VIP</span></div>
+    <h3>AI-analys live</h3>
+    <ul class="list">
+      <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F3D3DA" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Se hur AI används i konkreta exempel från olika branscher</span></li>
+      <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F3D3DA" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span><span class="fyll">[ANTAL]</span> VIP-deltagare väljs ut för en personlig AI-analys av sin verksamhet (<span class="fyll">[MINUTER]</span> min)</span></li>
+      <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F3D3DA" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Övriga VIP-deltagare följer processen live och lär sig av exemplen</span></li>
+    </ul>
+  </div>
+
+  <a class="btn" href="#biljetter">Välj din biljett</a>
+</section>
+
+<!-- FÖR VEM -->
+<section class="white">
+  <h2>Vem är träningen för?</h2>
+  <div class="who"><b>Företagare</b><span class="muted">Du vill synas mer i sociala medier men har inte tid att filma, redigera och skriva varje vecka.</span></div>
+  <div class="who"><b>Marknadsansvariga</b><span class="muted">Du vill producera mer video och innehåll med samma budget och samma team.</span></div>
+  <div class="who"><b>HR &amp; employer branding</b><span class="muted">Du vill visa upp arbetsplatsen och locka talanger – utan dyra filminspelningar.</span></div>
+  <div class="who"><b>Du som inte vill stå framför kameran</b><span class="muted">Du vet att video säljer, men du tycker inte om att filma dig själv. Här är lösningen.</span></div>
+</section>
+
+<!-- PASSAR DIG OM -->
+<section>
+  <h2>Träningen passar dig om du…</h2>
+  <div class="step"><div class="num">1</div><div><b>…precis har börjat med AI</b><p class="muted">Du vet att AI kan hjälpa dig, men inte var du ska börja.</p></div></div>
+  <div class="step"><div class="num">2</div><div><b>…har testat AI men inte är nöjd</b><p class="muted">Dina prompter ger ytliga svar och resultaten känns inte som du.</p></div></div>
+  <div class="step"><div class="num">3</div><div><b>…vill få ut mer av AI</b><p class="muted">Du använder redan verktygen men vill nå hela potentialen.</p></div></div>
+  <div class="step"><div class="num" style="background:#A23A58;color:#fff">4</div><div><b>…vill automatisera det som tar tid</b><p class="muted">Du vill lägga din energi på det som faktiskt driver affären framåt.</p></div></div>
+</section>
+
+<!-- VERKTYG -->
+<section class="dark">
+  <h2>AI-verktygen du lär dig</h2>
+  <div class="grid">
+    <div class="tool"><b>Text</b><span class="muted" style="font-size:14px"><span class="fyll">[t.ex. ChatGPT]</span></span></div>
+    <div class="tool"><b>Bild</b><span class="muted" style="font-size:14px"><span class="fyll">[Verktyg]</span></span></div>
+    <div class="tool"><b>AI-avatar &amp; video</b><span class="muted" style="font-size:14px"><span class="fyll">[Verktyg]</span></span></div>
+    <div class="tool"><b>Automatisering</b><span class="muted" style="font-size:14px"><span class="fyll">[Verktyg]</span></span></div>
+  </div>
+</section>
+
+<!-- MENTOR -->
+<section>
+  <p style="font-size:15px;font-weight:700;color:#A23A58">Din mentor</p>
+  <h2 style="font-size:44px">Monica Lööv</h2>
+  <p style="font-size:16px;font-weight:700">Grundare av MonicaLoov.ai</p>
+  <div class="ph" style="height:340px;background:#E9DDD6;border-color:#B7A59C;color:#6E6166">[Porträtt av Monica]</div>
+  <ul class="list">
+    <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#A23A58" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span><b>Pionjär inom AI-avatarer</b> för svenska företag – hjälper verksamheter att synas i sociala medier utan att stå framför kameran</span></li>
+    <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#A23A58" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Producerar <b>AI-video, AI-avatarer och AI-bilder</b> för svenska företag</span></li>
+    <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#A23A58" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Bakgrund inom <b>spelutveckling och grafisk design</b></span></li>
+    <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#A23A58" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Programledare för podden <b>Kvinnlig Kraft &amp; Strategi</b></span></li>
+    <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#A23A58" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span><span class="fyll">[Lägg till resultat: antal kunder, videor, följare …]</span></span></li>
+  </ul>
+</section>
+
+<!-- BILJETTER -->
+<section class="white" id="biljetter">
+  <h2>Välj din biljett</h2>
+  <div class="ticket">
+    <b style="font-size:17px">Standard</b>
+    <div class="price"><span class="fyll">[PRIS]</span> kr</div>
+    <ul class="list muted">
+      <li>Dag 1–3 live</li>
+      <li>Inspelningar i <span class="fyll">[X]</span> dagar</li>
+      <li>Bonus vid anmälan</li>
+    </ul>
+    <a class="btn alt" href="LANK-STANDARD">Köp Standard</a>
+  </div>
+  <div class="ticket vip">
+    <div style="display:flex;justify-content:space-between;align-items:center"><b style="font-size:17px">VIP</b><span class="tag">Populärast</span></div>
+    <div class="price"><span class="fyll">[PRIS]</span> kr</div>
+    <ul class="list" style="color:#E9DFE2">
+      <li>Allt i Standard</li>
+      <li>Dag 4: AI-analys live</li>
+      <li>Chans till personlig analys av din verksamhet</li>
+      <li><span class="fyll">[Extra VIP-förmån]</span></li>
+    </ul>
+    <a class="btn" href="LANK-VIP">Köp VIP</a>
+  </div>
+</section>
+
+<!-- AVSLUT -->
+<section class="dark">
+  <h2>Gillar du inte att filma dig själv – men behöver video för att sälja?</h2>
+  <p class="lead">Lösningen: AI-avatar + AI-redigering. Jag visar dig hur, från start till mål.</p>
+  <a class="btn" href="#biljetter">Säkra din plats</a>
+  <footer>© MonicaLoov.ai – <a href="LANK-KONTAKT">Kontakt</a> – <a href="LANK-INTEGRITET">Integritetspolicy</a></footer>
+</section>
+
+</div>
+</body>
+</html>
